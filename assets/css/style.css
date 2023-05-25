@@ -1,0 +1,95 @@
+@import url("https://use.typekit.net/ifg2wbg.css");
+:root {
+  background-color: #333333;
+  color: #f2f2f2;
+}
+body {
+  margin: auto;
+  padding: 10rem;
+}
+body > header > .display {
+  font-family: "articulat-heavy-cf", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+
+  font-size: 4.768rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7rem;
+  color: transparent;
+
+  -webkit-text-stroke-width: 0.07rem;
+  -webkit-text-stroke-color: #f2f2f2;
+}
+h1 {
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.09rem;
+  font-size: 1.953rem;
+}
+p {
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.25rem;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.7rem;
+  max-width: 100%;
+  justify-content: center;
+}
+.card {
+  max-width: 25%;
+  text-align: center;
+  margin: auto;
+  align-content: center;
+  /* border: 0.1rem solid #f2f2f2; */
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 #5f5e5e;
+  transition: 0.1s;
+}
+.card:hover {
+  box-shadow: 0 16px 32px 0 #5f5e5e;
+}
+
+img {
+  border-radius: 1rem;
+  max-width: 80%;
+}
+.price {
+  font-weight: bold;
+}
+.description {
+  font-size: 0.8rem;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.cta {
+  font-size: 0.8rem;
+  width: 80%;
+  color: #f2f2f2;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+  border: 0.1rem solid #f2f2f2;
+  border-radius: 4rem;
+  padding: 0.3rem;
+  text-align: center;
+  cursor: pointer;
+}
+.cta:hover {
+  border: 0.1rem solid #475363;
+  text-decoration: underline;
+  background-color: #475363;
+}
+.cta > img {
+  padding-left: 0.5rem;
+  max-width: 0.8rem;
+}
