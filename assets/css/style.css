@@ -1,8 +1,27 @@
 @import url("https://use.typekit.net/ifg2wbg.css");
-:root {
-  background-color: #333333;
-  color: #f2f2f2;
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    background-color: #1e1127;
+    color: #7dcbc3;
+
+} 
+body > header > .display{
+  -webkit-text-stroke-color: #7dcbc3; 
 }
+.card{
+  box-shadow: 0 4px 8px 0 #42adf495;
+}
+
+.cta:hover {
+  border: 0.1rem solid #7dcbc32a;
+  background-color: #7dcbc32a;
+} */
+
+:root {
+  background-color: #7dcbc3;
+  color: #1e1127;
+}
+
 body {
   margin: auto;
   padding: 10rem;
@@ -18,8 +37,9 @@ body > header > .display {
   color: transparent;
 
   -webkit-text-stroke-width: 0.07rem;
-  -webkit-text-stroke-color: #f2f2f2;
+  -webkit-text-stroke-color: #1e1127;
 }
+
 h1 {
   font-family: "articulat-cf", sans-serif;
   font-weight: 700;
@@ -48,17 +68,39 @@ section {
   /* border: 0.1rem solid #f2f2f2; */
   border-radius: 1rem;
   padding: 2rem;
-  box-shadow: 0 4px 8px 0 #5f5e5e;
+  box-shadow: 0 4px 8px 0 #1e1127;
   transition: 0.1s;
 }
 .card:hover {
-  box-shadow: 0 16px 32px 0 #5f5e5e;
+  box-shadow: 0 16px 32px 0 #2c2035a0;
 }
 
 img {
   border-radius: 1rem;
   max-width: 80%;
 }
+img:hover {
+  opacity: 1;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .price {
   font-weight: bold;
 }
@@ -73,21 +115,21 @@ img {
 .cta {
   font-size: 0.8rem;
   width: 80%;
-  color: #f2f2f2;
+  color: #1e1127;
   align-items: center;
   justify-content: center;
 
   background-color: transparent;
-  border: 0.1rem solid #f2f2f2;
+  border: 0.1rem solid #1e1127;
   border-radius: 4rem;
   padding: 0.3rem;
   text-align: center;
   cursor: pointer;
 }
 .cta:hover {
-  border: 0.1rem solid #475363;
+  border: 0.1rem solid #1e112729;
   text-decoration: underline;
-  background-color: #475363;
+  background-color: #1e112729;
 }
 .cta > img {
   padding-left: 0.5rem;
